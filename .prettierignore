@@ -1,0 +1,12 @@
+tsconfig.json
+next.config.js
+
+script
+dist
+public
+out
+.eslintrc.js
+jest.config.js
+jest
+.next
+*.md

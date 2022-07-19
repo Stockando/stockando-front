@@ -1,0 +1,110 @@
+{
+  "name": "stockando-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "check:lint": "eslint ./src --ext .ts,.tsx",
+    "prettify": "prettier --write ./src",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "posttest:coverage": "yarn open:coverage",
+    "open:coverage": "node scripts/open-coverage.js"
+  },
+  "dependencies": {
+    "@fontsource/roboto": "^4.5.7",
+    "@radix-ui/react-alert-dialog": "^0.1.7",
+    "@radix-ui/react-avatar": "^0.1.4",
+    "@radix-ui/react-checkbox": "^0.1.5",
+    "@radix-ui/react-dialog": "^0.1.7",
+    "@radix-ui/react-dropdown-menu": "^0.1.6",
+    "@radix-ui/react-hover-card": "^0.1.5",
+    "@radix-ui/react-label": "^0.1.5",
+    "@radix-ui/react-progress": "^0.1.4",
+    "@radix-ui/react-radio-group": "^0.1.5",
+    "@radix-ui/react-select": "^0.1.1",
+    "@radix-ui/react-separator": "^0.1.4",
+    "@radix-ui/react-slider": "^0.1.4",
+    "@radix-ui/react-switch": "^0.1.5",
+    "@radix-ui/react-tabs": "^0.1.5",
+    "@radix-ui/react-toast": "^0.1.1",
+    "@radix-ui/react-toggle-group": "^0.1.5",
+    "@radix-ui/react-tooltip": "^0.1.7",
+    "@stitches/react": "^1.2.8",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.11.43",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "axios": "^0.27.2",
+    "date-fns": "^2.28.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "react-lottie": "^1.2.3",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.7.4",
+    "web-vitals": "^2.1.4",
+    "zustand": "^4.0.0-rc.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "chance": "^1.1.8",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-import-helpers": "^1.2.1",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-testing-library": "^5.5.1",
+    "jest": "^28.1.2",
+    "jest-ts-auto-mock": "^2.1.0",
+    "prettier": "^2.7.1",
+    "react-test-renderer": "^18.2.0",
+    "ts-auto-mock": "^3.6.2",
+    "ts-jest": "^28.0.5",
+    "ttypescript": "^1.5.13"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "compiler": "ttypescript"
+      }
+    },
+    "setupFiles": [
+      "<rootDir>jest.setup.ts"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
